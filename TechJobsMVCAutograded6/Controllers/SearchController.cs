@@ -16,11 +16,11 @@ public class SearchController : Controller
     {
         ViewBag.columns = ListController.ColumnChoices;
         ViewBag.jobs = jobs;
-        return View(jobs);
+        return View();
     }
 
     // TODO #3 - Create an action method to process a search request and render the updated search views.
-    [HttpPost]
+    //[HttpPost]?????
     public IActionResult Results(string searchType, string searchTerm)
     {
 
